@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+#Introduction to Multilevel Models {#ch-multilevelintro}
 
-You can use the [editor on GitHub](https://github.com/AnnaKMWall/BYSH-Attempt/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+##Learning Objectives
+  After finishing this chapter, you should be able to:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- Recognize when response variables and covariates have been collected at multiple (nested) levels.
+- Apply exploratory data analysis techniques to multilevel data.
+- Write out a multilevel statistical model, including assumptions about variance components, in both by-level and composite forms.
+- Interpret model parameters (including fixed effects and variance components) from a multilevel model, including cases in which covariates are continuous, categorical, or centered.
+- Understand the taxonomy of models, including why we start with an unconditional means model.
+- Select a final model, using criteria such as AIC, BIC, and deviance.
 
-### Markdown
+##Case Study: Music Performance Anxiety {#cs:music}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+\setlength{\parindent}{7ex}
+\indent Stage fright can be a serious problem for performers, and understanding the personality underpinnings of performance anxiety is an important step in determining how to minimize its impact.  Sadler and Miller (2010) studied the emotional state of musicians before performances and factors which may affect their emotional state.  Data was collected by having 37 undergraduate music majors from a competitive undergraduate music program fill out diaries prior to performances over the course of an academic year.  In particular, study participants completed a Positive Affect Negative Affect Schedule (PANAS) before each performance.  The PANAS instrument provided two key outcome measures:  negative affect (a state measure of anxiety) and positive affect (a state measure of happiness).  We will focus on negative affect as our primary response measuring performance anxiety.  \par
 
-```markdown
-Syntax highlighted code block
+\indent Factors which were examined for their potential relationships with performance anxiety included:  performance type (solo, large ensemble, or small ensemble); audience (instructor, public, students, or juried); if the piece was played from memory; age; gender; instrument (voice, orchestral, or keyboard); and, years studying the instrument.  In addition, the personalities of study participants were assessed at baseline through the Multidimensional Personality Questionnaire (MPQ).  The MPQ provided scores for one lower-order factor (absorption) and three higher-order factors: positive emotionality (PEM--a composite of well-being, social potency, achievement, and social closeness); negative emotionality (NEM--a composite of stress reaction, alienation, and aggression); and, constraint (a composite of control, harm avoidance, and traditionalism). \par
 
-# Header 1
-## Header 2
-### Header 3
+Primary scientific hypotheses of the researchers included:
 
-- Bulleted
-- List
+- Lower music performance anxiety will be associated with lower levels of a subject's negative emotionality.
+- Lower music performance anxiety will be associated with lower levels of a subject's stress reaction.
+- Lower music performance anxiety will be associated with greater number of years of study.
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/AnnaKMWall/BYSH-Attempt/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+##Initial Exploratory Analyses {#explore}
